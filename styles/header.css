@@ -13,7 +13,7 @@
 }
 
 .cabecalho {
-    background-color: var(--branco);
+    background-color: var(--cor-de-fundo);
     display: flex;
     justify-content: space-between;
     align-items: center
@@ -71,3 +71,4 @@
  .container--tecla {
     display: none;
  }
+

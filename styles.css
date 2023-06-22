@@ -4,7 +4,8 @@
 
 :root {
     --cor-de-fundo: #4EBFE9;
-    --branco: #FFFFFF;
+    --branco: #ffffff;
+    --cinza: #bbb4b4;
     --azulzin: #4EBFE9;
     --azul: #413DE6; 
     --fonte-principal: "Poppins";
@@ -21,4 +22,8 @@ body {
 
 .gamezoneimg {
     width: 55px
+}
+
+.header-png {
+    width: 100%;
 }
