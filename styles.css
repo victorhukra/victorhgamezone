@@ -1,0 +1,24 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/carrosel.css);
+
+:root {
+    --cor-de-fundo: #4EBFE9;
+    --branco: #FFFFFF;
+    --azulzin: #4EBFE9;
+    --azul: #413DE6; 
+    --fonte-principal: "Poppins";
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.gamezoneimg {
+    width: 55px
+}

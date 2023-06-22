@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>gamezone</title>
+                     <link rel="preconnect" href="https://fonts.googleapis.com">
+                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"  />
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="reset.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+                 <input type="checkbox" id="menu" class="container--tecla">
+                    <label for="menu">
+                        <span class="cabecalho_menu_hamburguer container--imagem"></span>
+                    </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu-titulo">Categorias</li>
+                      <li class="lista-menu-item">
+                         <a href="#" class="lista_menu-link">Comunidade</a>
+                     </li>
+
+                     <li class="lista-menu-item">
+                        <a href="#" class="lista_menu-link">Biblioteca</a>
+                    </li>
+
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista_menu-link">Oficina</a>
+                    </li>
+
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista_menu-link">Jogos</a>
+                    </li>
+
+                    <li class="lista-menu-item">
+                        <a href="#" class="lista_menu-link">Atividade</a>
+                    </li>                        
+                </ul>
+                <img src="img/gamezone2.svg" alt="gamezoneimg" class="gamezoneimg" >
+            </div>
+
+            <div class="container">
+                <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="container--imagem"></a>
+                <a href="#"><img src="img/Compras.svg" alt="Minhas Compras" class="container--imagem"></a>
+                <a href="#"><img src="img/Usuário.svg" alt="Meu Perfil" class="container--imagem"></a>
+            </div>
+          </header>
+          <section class="banner">
+                <h2 class="banner-titulo">O maior site de games do Brasil</h2>
+                <p class="banner-texto">Se aventure! Descubra e explore os jogos do momento</p>
+                <input type="search" class="banner-pesquisa" placeholder="Qual será seu próximo jogo?">
+          </section>
+
+          <section class="carrosel">
+            <h2 class="carrosel-titulo">Jogos do momento</h2>
+          </section>
+
+                                                <!-- Slider main container -->
+                                            <div class="swiper">
+                                            <!-- Additional required wrapper -->
+
+                                  <!-- If we need pagination -->
+                                  <div class="swiper-pagination"></div>
+                                            <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                        <div class="swiper-slide"><img src="img/re4.jpg" alt="re4"></div>
+                                        <div class="swiper-slide"><img src="img/pubg.jpg" alt="pubg"></div>
+                                        <div class="swiper-slide"><img src="img/rdr2.jpg" alt="rdr2"></div>
+                                        <div class="swiper-slide"><img src="img/r6.jpg" alt="r6"></div>
+                                        <div class="swiper-slide"><img src="img/fifa.jpg" alt="fifa"></div>
+                                        <div class="swiper-slide"><img src="img/fortnite.jpg" alt="fort"></div>
+                                        <div class="swiper-slide"><img src="img/cod.jpg" alt="cod"></div>
+                                        <div class="swiper-slide"><img src="img/gta.jpg" alt="gta"></div>
+
+
+
+
+
+
+                                        ...
+                                        </div>
+
+                                    
+                                        <!-- If we need navigation buttons -->
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                
+                                   </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                     spaceBetween: 10,
+                     slidesPerView: 3,
+                     pagination: {
+                         el: '.swiper-pagination',
+                         type: 'bullets',
+                     }, 
+                });     
+
+            </script>
+
+    </body>
+
+</html>
