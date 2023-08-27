@@ -12,6 +12,13 @@
     background-position: center;
 }
 
+
+.container--tecla:checked ~ .container_rotulo > .cabecalho_menu_hamburguer {
+    background-image: url("../img/Menu\ Aberto.svg") ;
+}
+
+
+
 .cabecalho {
     background-color: var(--cor-de-fundo);
     display: flex;
@@ -72,3 +79,19 @@
     display: none;
  }
 
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+  .gamezoneimg {
+    display: none;
+  }
+
+.favoritos-img {
+    display: block;
+}
+
+}

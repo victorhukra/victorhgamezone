@@ -1,111 +1,337 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <meta charset="UTF8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>gamezone</title>
-                     <link rel="preconnect" href="https://fonts.googleapis.com">
-                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"  />
-            <link rel="stylesheet" href="styles.css">
-            <link rel="stylesheet" href="reset.css">
-    </head>
+<head>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gamezone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"  />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="reset.css">
+</head>
 
-    <body>
-        <header class="cabecalho">
+<body>
+    <header class="cabecalho">
             <div class="container">
-                 <input type="checkbox" id="menu" class="container--tecla">
-                    <label for="menu">
-                        <span class="cabecalho_menu_hamburguer container--imagem"></span>
-                    </label>
-                <ul class="lista-menu">
-                    <li class="lista-menu-titulo">GAMEZONE</li>
-                      <li class="lista-menu-item">
-                         <a href="#" class="lista_menu-link">Comunidade</a>
-                     </li>
+                <input type="checkbox" id="menu" class="container--tecla">
+                <label for="menu" class="container_rotulo">
+                    <span class="cabecalho_menu_hamburguer container--imagem"></span>
+                </label>
+            <ul class="lista-menu">
+                <li class="lista-menu-titulo">GAMEZONE Aquaze</li>
 
-                     <li class="lista-menu-item">
-                        <a href="#" class="lista_menu-link">Biblioteca</a>
-                    </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista_menu-link">Comunidade</a>
+                </li>
 
-                    <li class="lista-menu-item">
-                        <a href="#" class="lista_menu-link">Oficina</a>
-                    </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista_menu-link">Biblioteca</a>
+                </li>
 
-                    <li class="lista-menu-item">
-                        <a href="#" class="lista_menu-link">Jogos</a>
-                    </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista_menu-link">Oficina</a>
+                </li>
 
-                    <li class="lista-menu-item">
-                        <a href="#" class="lista_menu-link">Atividade</a>
-                    </li>                        
-                </ul>
-                <img src="img/gamezone2.svg" alt="gamezoneimg" class="gamezoneimg" >
+                <li class="lista-menu-item">
+                    <a href="#" class="lista_menu-link">Jogos</a>
+                </li>
+
+                <li class="lista-menu-item">
+                    <a href="#" class="lista_menu-link">Atividade</a>
+                </li>     
+            </ul>
+
+            
             </div>
 
             <div class="container">
                 <a href="#"><img class="header-png" src="img/header.png" alt="header"></a>
                 <a href="#"><img class="container--imagem" src="img/Usuário.svg" alt="Usuário"></a>
-
-
             </div>
-          </header>
-          <section class="banner">
-                <h2 class="banner-titulo">O maior site de games do Brasil</h2>
-                <p class="banner-texto">Se aventure! Descubra e explore os jogos do momento</p>
-                <input type="search" class="banner-pesquisa" placeholder="Qual será seu próximo jogo?">
-          </section>
 
-          <section class="carrosel">
-            <h2 class="carrosel-titulo">Jogos do momento</h2>
-          </section>
+    </header>
 
-                                                <!-- Slider main container -->
-                                            <div class="swiper">
-                                            <!-- Additional required wrapper -->
-
-                                  <!-- If we need pagination -->
-                                  <div class="swiper-pagination"></div>
-                                            <div class="swiper-wrapper">
-                                            <!-- Slides -->
-                                        <div class="swiper-slide"><img src="img/re4.jpg" alt="re4"></div>
-                                        <div class="swiper-slide"><img src="img/pubg.jpg" alt="pubg"></div>
-                                        <div class="swiper-slide"><img src="img/rdr2.jpg" alt="rdr2"></div>
-                                        <div class="swiper-slide"><img src="img/r6.jpg" alt="r6"></div>
-                                        <div class="swiper-slide"><img src="img/fifa.jpg" alt="fifa"></div>
-                                        <div class="swiper-slide"><img src="img/fortnite.jpg" alt="fort"></div>
-                                        <div class="swiper-slide"><img src="img/cod.jpg" alt="cod"></div>
-                                        <div class="swiper-slide"><img src="img/gta.jpg" alt="gta"></div>
+    <section class="banner">
+            <h2 class="banner-titulo">O maior site de games do Brasil</h2>
+            <p class="banner-texto">Se aventure! Descubra e explore os jogos do momento</p>
+            <input type="search" class="banner-pesquisa" placeholder="Qual será seu próximo jogo?">
+    </section>
 
 
 
+    <section class="carrossel">
+            <h2 class="carrossel-titulo">Mais jogados do momento</h2></div>
+
+            <!-- Slider main container -->
+            <div class="carrossel_container">
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/re4.jpg" alt="re4"></div>
+            <div class="swiper-slide"><img src="img/pubg.jpg" alt="pubg"></div>
+            <div class="swiper-slide"><img src="img/rdr2.jpg" alt="rdr2"></div>
+            <div class="swiper-slide"><img src="img/r6.jpg" alt="r6"></div>
+            <div class="swiper-slide"><img src="img/fifa.jpg" alt="fifa"></div>
+            <div class="swiper-slide"><img src="img/fortnite.jpg" alt="fort"></div>
+            <div class="swiper-slide"><img src="img/cod.jpg" alt="cod"></div>
+            <div class="swiper-slide"><img src="img/gta.jpg" alt="gta"></div>
+
+            ...
+            </div>
+                    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>  
+        </div>
+
+
+        <div class="card">
+            <!--1 linha-->
+            <div class="card_descricao">
+                <!--1 coluna-->
+                <div class="descricao">
+                    <h3 class="descricao_titulo">The Game Award 2022</h3>
+                    <h2 class="descricao_titulo-2">Elden Ring</h2>
+                    <p class="descricao_texto">O jogo "Elden Ring" venceu o prêmio "The Game Award 2022", 
+                    o melhor jogo do ano!
+                    </p>
+                </div>
+                <!--2 coluna-->
+                <img src="img/eldenring.jpg" alt="eldenring" class="descricao_imagem">
+            </div>
+
+            <!--2 linha-->
+            <div class="card_botoes">
+                <!--1 coluna-->
+                <ul class="botoes">
+                    <li class="botoes_item"><img src="img/Favoritos.svg" alt="Favoritos"></li>
+                    <li class="botoes_item"><img src="img/Compras.svg" alt="Compras"></li>
+                </ul>
+                <!--2 coluna-->
+                <a href="#" class="botoes_ancora">Ler mais...</a>
+            </div>
+        </div>
+    </div>
+
+
+        <h2 class="carrossel-titulo">Jogos mais vendidos na última semana</h2>
+        <!-- Slider main container -->
+        <div class="carrossel_container">
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/overwatch.7fe83eed-4459-4587-84ee-1bc2ba0662f6" alt="overwatch"></div>
+        <div class="swiper-slide"><img src="img/valhalla.7fe83eed-4459-4587-84ee-1bc2ba0662f6" alt="valhalla"></div>
+        <div class="swiper-slide"><img src="img/stray.13c1afe0-c06d-46d6-bfdc-6009527cbaff" alt="stray"></div>
+        <div class="swiper-slide"><img src="img/cuphead.7170663c-a4e2-46db-a81b-aa22c30d6d44" alt="cuphead"></div>
+
+        ...
+        </div>
+                    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>  
+        </div>
 
 
 
-                                        ...
-                                        </div>
+        <div class="card">
+            <!--1 linha-->
+            <div class="card_descricao">
+                <!--1 coluna-->
+                <div class="descricao">
+                    <h3 class="descricao_titulo">The Game Award para melhor player de e-Sports do mundo</h3>
+                    <h2 class="descricao_titulo-2">Oleksandr "S1mple" Kostyliev</h2>
+                    <p class="descricao_texto">S1mple venceu como o melhor jogador de "Counter-Strike" do mundo!</p>
+                </div>
+                <!--2 coluna-->
+                <img src="img/S1mple.webp" alt="S1mple" class="descricao_imagem-2">
+            </div>
 
-                                    
-                                        <!-- If we need navigation buttons -->
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-button-next"></div>
-                                
-                                   </div>
+            <!--2 linha-->
+            <div class="card_botoes">
+                <!--1 coluna-->
+                <ul class="botoes">
+                    <li class="botoes_item"><img src="img/Favoritos.svg" alt="Favoritos"></li>
+                    <li class="botoes_item"><img src="img/Compras.svg" alt="Compras"></li>
+                </ul>
+                <!--2 coluna-->
+                <a href="#" class="botoes_ancora">Ler mais...</a>
+            </div>
+        </div>
+    </div>
 
-          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-            <script>
+    </section>
+
+    
+
+    <section class="topicos">
+        <h2 class="topicos_titulo">Plataformas de distribuição de jogos digitais para computadores</h2>
+        <ul class="topicos_lista">
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Steam</a>            
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Riot Games</a>            
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Epic Games</a>            
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Microsoft Store</a>            
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Origin</a>            
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Ubisoft</a>            
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Blizzard</a>            
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Rockstar Games</a>            
+            </li>
+        </ul>
+    </section>
+
+
+
+    <section class="contato">
+        <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
+        <p class="contato_texto">Informações gerais sobre o mundo dos jogos.</p>
+        <input type="email" placeholder="Iniciar sessão" class="contato_email">
+    </section>
+
+
+
+    <hr/>
+
+
+
+    <footer class="rodapé">
+        <h2 class="rodapé_titulo">Gamezone Aquaze</h2>
+
+        <ul class="lista_rodapé">
+            <li class="lista_rodapé_titulo">Gamezone Services</li>
+                <li class="lista_rodapé_item">
+                    <img src="img/CasaDoCodigo.png" alt="CasaDoCodigo">
+                    <a href="#" class="lista_rodapé_link">Casa Aquaze</a>
+                </li>
+
+                <li class="lista_rodapé_item">
+                    <img src="img/Caelum.png" alt="CasaDoCodigo">
+                    <a href="#" class="lista_rodapé_link">Caelum</a>
+                </li>
+        </ul>
+
+
+        <ul class="lista_rodapé">
+            <li class="lista_rodapé_titulo">Gamezone Plataforms</li>
+            <li class="lista_rodapé_item">
+                <img src="img/alurablue.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">Aquaze</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/AluraEmpresas.png" alt="Alura empresa">
+                <a href="#" class="lista_rodapé_link">Gamezone Aquaze</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/AluraLatam.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">Aquaze International</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/AluraStart.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">Aquaze Software</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/MusicDot.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">Aquaze Music</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/AluraLingua.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">Aquaze Games</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/PM3.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">Aquaze PM3</a>
+            </li>
+        </ul>
+
+
+        <ul class="lista_rodapé">
+            <li class="lista_rodapé_titulo">Gamezone Comunity</li>
+            <li class="lista_rodapé_item">
+                <img src="img/HipstersTech.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">Gamezone Tech</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/Scuba.png" alt="Alura empresa">
+                <a href="#" class="lista_rodapé_link">Scuba Dev</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/Layers.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">Layers</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/LikeABoss.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">LikeABoss</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/CarreiraSemFronteira.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">GA Carreira</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/HipstersJobs.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">Tech</a>
+            </li>
+
+            <li class="lista_rodapé_item">
+                <img src="img/GUJ.png" alt="Alura">
+                <a href="#" class="lista_rodapé_link">GUJ</a>
+            </li>
+        </ul>
+
+    </footer>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
                 const swiper = new Swiper('.swiper', {
-                     spaceBetween: 10,
-                     slidesPerView: 3,
-                     pagination: {
-                         el: '.swiper-pagination',
-                         type: 'bullets',
-                     }, 
+                    spaceBetween: 10,
+                    slidesPerView: 3,
+                    pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    }, 
                 });     
 
-            </script>
+        </script>
 
-    </body>
+</body>
 
 </html>

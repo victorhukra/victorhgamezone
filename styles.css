@@ -1,6 +1,11 @@
 @import url(styles/header.css);
 @import url(styles/banner.css);
-@import url(styles/carrosel.css);
+@import url(styles/carrossel.css);
+@import url(styles/topicos.css);
+@import url(styles/contato.css);
+@import url(styles/rodapé.css);
+
+
 
 :root {
     --cor-de-fundo: #4EBFE9;
@@ -10,6 +15,7 @@
     --azul: #413DE6; 
     --fonte-principal: "Poppins";
     font-family: 'Poppins', sans-serif;
+    --fonte-secundario: "Josefin Sans"
 }
 
 body {
@@ -26,4 +32,34 @@ body {
 
 .header-png {
     width: 100%;
+}
+
+.descricao_imagem-2 {
+    width: 30%;
+}
+
+.descricao_imagem {
+    width: 30%;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    
+  .header-png {
+    width: 50%;
+    margin: 0em 16em 0em;
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 1728px) {
+
+    .header-png {    
+    margin: 0em 33em 0em;
+    width: 40%;
+    }
 }
